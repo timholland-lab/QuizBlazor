@@ -1,0 +1,44 @@
+[
+  {
+    "Question": "What is Blazor?",
+    "Id": 1,
+    "Answers": [
+      [ "It's a super awesome framework by Microsoft for building interactive client-side web UI with the best performance ever in .NET and C Sharp named Blazor." ],
+      [ "Something my kid wears to school." ],
+      [ "Both a and b" ],
+      [ "None of the above" ]
+    ],
+    "Answer": "Both a and b"
+  },
+  {
+    "Question": "Type of Blazor",
+    "Id": 2,
+    "Answers": [
+      [ "Blazor Server" ],
+      [ "Blazor Web Assembly" ]
+    ],
+    "Answer": "Blazor Web Assembly"
+  },
+  {
+    "Question": "WASM, Stands for? ",
+    "Id": 3,
+    "Answers": [
+      [ "Wrapper Assembly" ],
+      [ "Web Assembly" ]
+    ],
+    "Answer": "Wrapper Assembly" 
+  },
+  {
+    "Question": "What are the Features of Blazor? ",
+    "Id": 4,
+    "Answers": [
+      [ "Component-based architecture." ],
+      [ "DI (Dependency Injection)." ],
+      [ "Blazor Forms and Validation." ],
+      [ "Live Reload." ],
+      [ "JavaScript interop." ],
+      [ "Unit Testing." ], 
+      "Answer": "Wrapper Assembly"
+    ]
+  }
+]

@@ -1,0 +1,71 @@
+﻿@page "/questions"
+@using Newtonsoft.Json
+@using OriginalNewQuestionsPage.Components
+
+<PageTitle>Issue Token</PageTitle>
+
+@{
+    <h1>Blazor Quiz</h1>
+
+   
+        @if (questionIndex < response.Count())
+        {
+            <h2> @response[questionIndex].Question</h2>
+            @foreach (var item in response[questionIndex].Answers)
+            {
+            //<h2 OnOptionSelected="OptionSelected">  @item  </h2>
+            <OptionCard Option="item" OnOptionSelected="OptionSelected"></OptionCard>
+            }
+        }
+
+        //questionIndex++;
+    
+
+
+
+    //// Keep count of number of questions in .json file
+    //int questionCount = 0;
+    //<br />
+
+    //// loop through questions parsed from json file. 
+    //@foreach (var item in @response)
+    //{
+    //        <h4>@item.Id .@item.Question  </h4>
+            
+    //        //loop through possible answers from each question. the number of answers will vary.
+    //        @for (int i = 0; i < item.Answers.Count; i++)
+    //            {
+    //                //checkboxes rather than radio buttons to allow for multiple answers
+    //                <input type="checkbox" name="@item.Id" class="rb" data-answer="@item.Answers[i][0]" value ="@item.Answers[i][1]" /> @item.Answers[i][0]
+    //                <br/>
+    //            }
+
+    //        <p class="spaces" style="display: none">&nbsp;</p>
+    //        //space for the correct answers and the given answers to be displayed.
+    //        <div style="display: flex">
+    //                <div style="width: 50%;">
+    //                    <div data-CorrectAnswersHeading="@item.Id" style="color: green; display: none">ANSWER(S)</div>
+    //                    <div data-CorrectAnswers="@item.Id"> &nbsp;</div>
+    //                </div>
+    //                <div style="width: 50%;">
+    //                    <div data-GivenAnswersHeading="@item.Id" style="color: blue; display: none">YOUR ANSWER(S)</div>
+    //                    <div data-GivenAnswers="@item.Id">&nbsp;</div>
+    //                </div>
+    //        </div>
+    //        <p class="spaces" style="display: none">&nbsp;</p>
+    //questionCount ++;
+    //}
+
+    //// hidden element to pass the number of questions to the js file.
+    //<p hidden id="count">@questionCount </p>
+
+    ////<br />
+    ////<hr />
+    //<div id="Score" style="font: bold" ></div>
+
+    ////display final score. Points only awarded for checked answers that exactly match (all) given answers.
+    //<p id="score" style="font-size: 30px; color: red; font: bold"></p>
+
+    //<button id="checkAnswersBut" onclick="checkAnswers()">Check Answers</button>
+
+}

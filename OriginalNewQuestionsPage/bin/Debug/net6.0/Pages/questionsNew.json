@@ -1,0 +1,12 @@
+[
+  {
+    "Question": "What is Blazor?",
+    "Id": 1,
+    "Answers": [
+      [ "It's a super awesome framework by Microsoft for building interactive client-side web UI with the best performance ever in .NET and C Sharp named Blazor.", "Correct" ],
+      [ "Something my kid wears to school.", "Incorrect" ],
+      [ "Both a and b", "Incorrect" ],
+      [ "None of the above", "Incorrect" ]
+    ]
+  }
+]

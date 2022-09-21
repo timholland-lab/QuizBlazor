@@ -6,6 +6,8 @@ namespace OriginalNewQuestionsPage.Pages
     public partial class Questions
     {
         public List<Questions_Answers> response = new();
+        protected int questionIndex = 0;
+        protected int score = 0;
 
         public Questions()
         {
@@ -17,9 +19,6 @@ namespace OriginalNewQuestionsPage.Pages
             await readQuestionsJsonFile();
         }
 
-        protected int questionIndex = 0;
-        protected int score = 0;
-
         private readonly ILogger<Questions> _logger;
 
         public Questions(ILogger<Questions> logger)
@@ -29,18 +28,14 @@ namespace OriginalNewQuestionsPage.Pages
 
         protected void OptionSelected(string option)
         {
-            if (option == response[questionIndex].Answers)
+            if (option == response[questionIndex].Answer)
             {
                 score++;
             }
             questionIndex++;
         }
 
-
-        public string myStr = "df";
-        // Location of the json file that contains all the questions. Need to change since hard coded.
-        public string questionsJson = "C:/Elasta2/src/Web/Pages/questions.json";
-      
+        public string questionsJson = "C:/Lab/220910BlazorCallingJSFromComponent/OriginalNewQuestionsPage/OriginalNewQuestionsPage/Pages/questions.json";
 
         // read in questions from json file and store as array.
         private async Task readQuestionsJsonFile()
@@ -61,15 +56,9 @@ namespace OriginalNewQuestionsPage.Pages
         {
             public string? Question { get; set; }
             public int Id { get; set; }
-            public List<List<string>>? Answers { get; set; }
+            public List<string>? Answers { get; set; }
+            public string? Answer { get; set; }
         }
-
-        //public class Question
-        //{
-        //    public string QuestionTitle { get; set; } = string.Empty;
-        //    public IEnumerable<string> Options { get; set; } = new List<string>();
-        //    public string Answer { get; set; } = string.Empty;
-        //}
 
         public class OptionCardBase : ComponentBase
         {

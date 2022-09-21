@@ -30,3 +30,4 @@ C:\Lab\220910BlazorCallingJSFromComponent\OriginalNewQuestionsPage\OriginalNewQu
 C:\Lab\220910BlazorCallingJSFromComponent\OriginalNewQuestionsPage\OriginalNewQuestionsPage\obj\Debug\net6.0\ref\OriginalNewQuestionsPage.dll
 C:\Lab\220910BlazorCallingJSFromComponent\OriginalNewQuestionsPage\OriginalNewQuestionsPage\bin\Debug\net6.0\Pages\questionsNew.json
 C:\Lab\220910BlazorCallingJSFromComponent\OriginalNewQuestionsPage\OriginalNewQuestionsPage\obj\Debug\net6.0\scopedcss\Components\OptionCard.razor.rz.scp.css
+C:\Lab\220910BlazorCallingJSFromComponent\OriginalNewQuestionsPage\OriginalNewQuestionsPage\bin\Debug\net6.0\Pages\questionsNew2.json

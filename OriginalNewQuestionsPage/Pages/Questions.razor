@@ -10,7 +10,7 @@
     @if (questionIndex < response.Count())
     {
         <h2> @response[questionIndex].Question</h2>
-        @foreach (var item in response[questionIndex].Answers)
+        @foreach (var item in response[questionIndex].SuggestedAnswers)
         {
             <OptionCard Option="@item" OnOptionSelected="OptionSelected"></OptionCard>
         }

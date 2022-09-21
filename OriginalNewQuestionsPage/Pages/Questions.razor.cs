@@ -56,7 +56,7 @@ namespace OriginalNewQuestionsPage.Pages
         {
             public string? Question { get; set; }
             public int Id { get; set; }
-            public List<string>? Answers { get; set; }
+            public List<string>? SuggestedAnswers { get; set; }
             public string? Answer { get; set; }
         }
 
